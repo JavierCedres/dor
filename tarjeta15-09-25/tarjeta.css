@@ -1,0 +1,82 @@
+body {
+    margin: 0px;
+}
+
+.mainContainer {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding-inline: 20px;
+    padding-bottom: 25px;
+    background: rgb(241, 240, 240);
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+.hobbies {
+    background: white;
+    font-size: 14px;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.hobbies:hover {
+    background: lightgray;
+}
+
+.popUpContainer {
+    display: none;
+}
+
+.showPopUp {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.popUp {
+    position: relative;
+    width: 300px;
+    padding-inline: 20px;
+    padding-bottom: 10px;
+    background: white;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+.closePopUpBtn {
+    background: transparent;
+    font-size: 20px;
+    font-weight: bold;
+    border: 0px;
+    padding: 5px;
+    position: absolute;
+    right: 5px;
+}
+
+.images {
+    margin-right: 40px;
+    width: 40px;
+    height: 40px;
+}
+
+.list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

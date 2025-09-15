@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="tarjeta.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="mainContainer">
+        <div class="card">
+            <h1>Javier Marcelo Cedrés González</h1>
+            <p>El año pasado realice un Erasmus de larga duración y el anterior termine DAM</p>
+            <button class="hobbies" onclick="handlePopUp()">Aficiones</button>
+        </div>
+        <div id="popUpContainer" class="popUpContainer">
+            <div class="popUp">
+                <button class="closePopUpBtn" onclick="handlePopUp()">X</button>
+                <h4>Videojuegos - actualmente:</h4>
+                <ul>
+                    <li class="list">Silksong<img class="images" src="./imgs/silksong.webp"/></li>
+                    <li class="list">Killing Floor 2<img class="images" src="./imgs/killingfloor.avif"/></li>
+                </ul>
+                <h4>Música</h4>
+                <ul>
+                    <li>Pop</li>
+                    <li>Rock</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script>
+        const popUp = document.getElementById("popUpContainer");
+        function handlePopUp() {
+            if (popUp.className == "showPopUp") {
+                popUp.className = "popUpContainer";
+            } else {
+                popUp.className = "showPopUp";
+            }
+        }
+    </script>
+</body>
+</html>
